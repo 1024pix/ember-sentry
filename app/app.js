@@ -12,6 +12,7 @@ Sentry.init({
   integrations: [new Sentry.Integrations.Ember()],
   release: config.APP.version,
   environment: config.environment,
+  debug: (config.environment !== 'production'),
 });
 /* --- end --- */
 
