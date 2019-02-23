@@ -1,6 +1,6 @@
 {
   "name": "ember-sentry",
-  "version": "1.7.0",
+  "version": "1.6.0",
   "private": true,
   "description": "Small description for ember-sentry goes here",
   "repository": "",
@@ -18,7 +18,7 @@
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "postversion": "npm run postversion:sentry-release && npm run postversion:sentry-commits && npm run postversion:sentry-deploy && npm run postversion:push-origin && npm run postversion:push-scalingo && npm run postversion:push-tags",
-    "postversion:sentry-release": "sentry-cli releases -o pix new ember-sentry-1.7.0 --finalize",
+    "postversion:sentry-release": "sentry-cli releases -o pix -p ember-sentry new ember-sentry-1.7.0 --finalize",
     "postversion:sentry-commits": "sentry-cli releases -o pix set-commits ember-sentry-1.7.0 --auto",
     "postversion:sentry-deploy": "sentry-cli releases -o pix deploys ember-sentry-1.7.0 new -e production",
     "postversion:push-origin": "git push origin master",
