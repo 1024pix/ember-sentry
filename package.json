@@ -15,7 +15,7 @@
     "publish": "npm version minor",
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
-    "postversion": "git push && gitpush scalingo master && git push --tags",
+    "postversion": "git push && git push scalingo master && git push --tags",
     "start": "ember serve",
     "test": "ember test"
   },
