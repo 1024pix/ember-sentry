@@ -12,7 +12,9 @@
   },
   "scripts": {
     "build": "ember build --environment production",
-    "publish": "npm version minor",
+    "publish:major": "npm version major",
+    "publish:minor": "npm version minor",
+    "publish:patch": "npm version patch",
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "postversion": "git push && git push scalingo master && git push --tags",
