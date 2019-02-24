@@ -12,9 +12,5 @@ actions: {
   sendErrorEvent() {
     throw new Error("Throwed error");
   },
-
-  sendNewErrorEvent() {
-    throw new Error("Lorem ipsum dolor");
-  }
 }
 });
